@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <meta name="viewpot" content="width=device-width, user-scalable-no, initial-scale=1.0, minimun-scale=1.0 , max-scale=1.0" />
+
+</h:head>
+<h:body>
+    <b:container>
+        <div class="header">
+            <ui:include src="header.xhtml" />
+        </div>
+        <div id="nav" class="navbar">
+            <ui:include src="menu.xhtml" />
+        </div>
+        <div id="content">
+
+            <p:messages id="geralMessages" showDetail="true" closable="ture">
+                <p:autoUpdate />
+            </p:messages>
+
+            <ui:insert name="content" />
+
+        </div>
+
+        <div class="footer" style="position: static; margin-bottom: 0px;">
+            <b:container>
+                <ui:include src="footer.xhtml" />
+            </b:container>
+        </div>
+    </b:container>
+</h:body>
+
+</html>
